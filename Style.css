@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui;
+  list-style: none;
+}
+
+.hero {
+  min-height: 100vh;
+  background: url(Images/Allaji.jpg) no-repeat center center/cover;
+  position: relative;
+  padding-top: 70px;
+}
+
+.hero nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  padding: 10px 20px;
+  background-color: white;
+  border-radius: 1em;
+  flex-wrap: wrap;
+}
+
+nav ul a {
+  text-decoration: none;
+  font-size: 1em;
+  font-weight: bold;
+  color: black;
+}
+
+nav ul a:hover {
+  border-bottom: 2px solid black;
+}
+
+nav .btn button {
+  padding: 8px 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  border-radius: 2rem;
+  margin-left: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    gap: 0.5rem;
+    font-size: 0.9em;
+  }
+
+  nav .btn {
+    display: inline;
+    gap: 2px;
+    
+  }
+
+  .content h1 {
+    font-size: 1.5em;
+    color: #f0ff85;
+  }
+
+  .content p {
+    font-size: 1em;
+  }
+}
